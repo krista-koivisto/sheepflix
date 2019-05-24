@@ -1,0 +1,351 @@
+body {
+    background-color: #111111;
+    background: radial-gradient(#1b181e, #111111) no-repeat center center fixed;
+    border: 0;
+
+    color: #DDDDDD;
+    font-family: sans;
+
+    margin: 0;
+    padding: 0;
+}
+
+h3.logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+
+    padding: 12px;
+
+    position: relative;
+    top: 6px;
+
+    background-color: #0C0C0C;
+    color: #DDDDDD;
+    font-size: 50px;
+    font-family: 'Abel', serif;
+}
+
+.logo_sub {
+    display: inline-block;
+    color: #999999;
+    font-size: 16px;
+    font-family: 'Abel', serif;
+    width: 30px;
+}
+
+video {
+    max-height: 85vh;
+}
+
+table.videoFrame {
+    background-color: #111111;
+    position:absolute;
+    border: 0;
+
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+td {
+    vertical-align: top;
+}
+
+.pageContainer {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.pageLogo {
+    cursor: default;
+    display: table-row;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.pageVideo {
+    display: table-row;
+}
+
+.videoContainer {
+    width: 85%;
+}
+
+.chatContainer {
+    background-color: #080808;
+    border: 2px solid #333333;
+}
+
+.videoContainer video {
+}
+
+.chatArea {
+    height: 800px;
+    width: 100%;
+
+    text-align: left;
+}
+
+.chatText {
+    padding: 10px;
+    height: 670px;
+    overflow-y: scroll;
+    word-break: break-word;
+}
+
+.chatBox {
+    border-top: 1px solid #DDDDDD;
+    padding-top: 10px;
+
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+.chatNameButton {
+    border: 2px solid #555555;
+    background-color: #DDDDDD;
+    color: #111111;
+
+    border-radius: 2px;
+
+    float: right;
+    height: 30px;
+    width: 20%;
+}
+
+.chatNameButton:hover {
+    border: 2px solid #AAAAAA;
+}
+
+.chatSendButton {
+    border: 2px solid #555555;
+    background-color: #DDDDDD;
+    color: #111111;
+
+    border-radius: 2px;
+
+    float: right;
+    height: 80px;
+    width: 20%;
+}
+
+.chatSendButton:hover {
+    border: 2px solid #AAAAAA;
+}
+
+.chatMsg {
+    background-color: #7f669d33;
+    border: 1px dotted #7f669d66;
+    border-radius: 8px;
+    line-height: 20px;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.msgContent {
+    margin: 12px 6px;
+}
+
+.msgSender {
+    font-weight: bold;
+    line-height: 12px;
+    margin: 0 0;
+    background-color: #7f669d33;
+    padding: 6px 6px;
+}
+
+.msgTime {
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+    float: right;
+}
+
+.chatMsg.notification {
+    color: #AAAAAA;
+    font-style: italic;
+
+    padding: 8px 12px;
+}
+
+.emoji {
+    width: 24px;
+    height: 24px;
+    vertical-align:middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+.showListItem {
+    text-align: center;
+    background-color: #AAAAAA;
+    color: #1C1C1C;
+
+    display: inline-flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+    width: 300px;
+    height: 100px;
+    margin: 8px;
+
+    opacity: 0.8;
+
+    border-radius: 12px;
+    cursor: default;
+    text-decoration: none;
+}
+
+.showListItem:hover {
+    background-color: #CCCCCC;
+    opacity: 0.95;
+
+    box-shadow: 0 0 0 4px #FFFFFF44;
+
+    cursor: pointer;
+}
+
+div.videoControls {
+    height: 0;
+    position: relative;
+    top: -52px;
+    margin: 0;
+    padding: 0;
+
+    opacity: 0.75;
+
+    text-align: center;
+}
+
+span.videoControlsBG {
+    display: inline-block;
+    background: #000000;
+    height: 80px;
+    width: 100%;
+
+    padding-top: 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+i.fas {
+    font-size: 24px;
+    color: white;
+}
+
+i.fas.fa-expand {
+    position: relative;
+    right: 1px;
+}
+
+i.fas.fa-pause {
+    position: relative;
+    right: 2px;
+}
+
+span.rangeControls {
+    position: relative;
+    top: 16px;
+    right: 8px;
+    width: 100%;
+}
+
+span.videoControl.timeLeft {
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    width: 80px;
+
+    text-align: center;
+}
+
+button.videoControl {
+    border: 0;
+    height: 42px;
+
+    border-radius: 20px;
+    padding-left: 10px;
+
+    background-color: #FFFFFF11;
+}
+
+button.videoControl:hover {
+    background-color: #FFFFFF33;
+    cursor: pointer;
+}
+
+button.videoControl:focus {
+    outline: none;
+}
+
+button.videoControl.fullscreen {
+    position: absolute;
+    width: 40px;
+    margin-right: 8px;
+    right: 0;
+
+    padding-right: 8px;
+}
+
+button.videoControl.playPause {
+    position: absolute;
+    left: 0;
+    margin-left: 8px;
+    width: 40px;
+}
+
+input.videoControl {
+    position: relative;
+    bottom: 4px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+
+    position: relative;
+    top: 6px;
+
+    height: 24px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+
+input.videoControl.seekbar {
+    background: white;
+    width: 80%;
+}
+
+input.videoControl.volume {
+    background: white;
+    width: 100px;
+}
